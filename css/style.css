@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.custfont {
+    font-family: 'Pacifico', cursive;
+}
+
+.custlinks {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 20px;
+}
+.custlinksfoot {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 18px;
+}
+
+.custquote{
+    font-family: 'Bilbo Swash Caps', cursive;
+}
