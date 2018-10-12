@@ -39,10 +39,9 @@
         <!-- Page Layout here -->
         <div class="row">
             <div class="col s12 m4 l3">
-                <div class="card z-depth-5">
+                <div class="card z-depth-4">
                     <div class="card-image">
                         <img src="images/Abhiraman.jpg">
-                        <span class="card-title blue-grey-text">Abhiraman Kuntimaddi</span>
                     </div>
                     <div class="card-content">
                         <p class=""><i class="material-icons inline-icon icon-teal">business_center</i> Android App and Web Developer</p>
@@ -121,8 +120,10 @@
                 </div>
             </div>
             <div class="col s12 m8 l9 container">
-                <div class="card">
+                <div class="card z-depth-4">
                     <div class="card-content">
+                        <a class="btn-floating right btn-large waves-effect waves-light amber" href="/assets/Resume.pdf" id="menu"><i class="material-icons">file_download
+                            </i></a>
                         <h1><i class="material-icons inline-icon-card icon-teal">work</i> Work Experience</h1>
                         <h2 class="flow-text" style="color: gray">Internship</h2>
                         <h3 class="flow-text">UI Development / PetPals</h3>
@@ -185,7 +186,7 @@
                         </div>
                     </div><br>
                 </div>
-                <div class="card">
+                <div class="card z-depth-4">
                     <div class="card-content">
                         <h1><i class="material-icons inline-icon-card icon-teal">computer</i> Acedemic Projects</h1>
                         <h2 class="flow-text" style="color: gray">Mini Project</h2>
@@ -223,7 +224,7 @@
                         </div><br>
                     </div><br>
                 </div>
-                <div class="card">
+                <div class="card z-depth-4">
                     <div class="card-content">
                         <h1><i class="material-icons inline-icon-card icon-teal">school</i> Education</h1><br>
                         <h2 class="flow-text" style="color: gray">Bachelor Of Engineering</h2>
@@ -262,9 +263,15 @@
         </div>
         <br><br>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large amber" href="#top">
+            <a class="btn-floating waves-effect waves-light btn-large amber" href="#top" id="menu">
                 <i class="large material-icons">arrow_upward</i>
             </a>
+        </div>
+        <!-- Tap Target Structure -->
+        <div class="tap-target teal" data-target="menu">
+            <div class="tap-target-content">
+                <p class="textcust">Download my resume.</p>
+            </div>
         </div>
     </main>
 
@@ -308,10 +315,12 @@
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
+            $('.tap-target').tapTarget();
         })
-
+        $("#menu").ready(function() {
+            $('.tap-target').tapTarget('open');
+        })
     </script>
-
 </body>
 
 </html>
