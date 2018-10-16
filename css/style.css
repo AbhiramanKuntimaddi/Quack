@@ -28,6 +28,27 @@ main {
     font-size: 14px;
 }
 
+.custhead {
+    font-family: 'Pacifico', cursive;
+}
+
+.custsubhead {
+    font-family: 'Meddon', cursive;
+}
+
+.infotext {
+    font-family: 'Fredoka One', cursive;
+}
+
+.timelinetext {
+    font-family: 'Lobster', cursive;
+}
+
+.abouttext{
+    font-family: 'Nothing You Could Do',cursive;
+    font-size: 110%;
+}
+
 .name {
     font-family: 'Lobster', cursive;
     font-size: 70px;
@@ -49,16 +70,30 @@ main {
     vertical-align: bottom;
     font-size: 25px !important;
 }
+
 .inline-icon-card {
     vertical-align: bottom;
     font-size: 40px !important;
 }
+
 i.icon-teal {
     color: teal;
 }
+
+.scrolltop {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
 /*
 font-family: 'Pacifico',cursive;
 font-family: 'Permanent Marker',cursive;
 font-family: 'Nothing You Could Do',cursive;
 font-family: 'Meddon',cursive;
-font-family: 'Lobster',cursive;*/
+font-family: 'Lobster',cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Covered By Your Grace', cursive;*/
