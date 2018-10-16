@@ -42,6 +42,21 @@
                 <div class="card z-depth-4">
                     <div class="card-image">
                         <img src="images/Abhiraman.jpg">
+                        <!--  <a class="btn-floating halfway-fab right btn-large waves-effect waves-light amber" href="/assets/Resume.pdf" id="menu" download="Abhiraman_Kuntimaddi_Resume.pdf"><i class="material-icons">file_download
+                            </i></a>-->
+                        <a class="btn-floating halfway-fab right btn-large waves-effect waves-light amber modal-trigger" href="#modal1" id="menu"><i class="material-icons">file_download
+                            </i></a>
+                        <div id="modal1" class="modal bottom-sheet">
+                            <div class="modal-content">
+                                <h4>Are you sure you want to download Resume?</h4>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="assets/Resume.pdf" class="waves-effect waves-green btn-flat" download="Abhiraman_Kuntimaddi_Resume"><i class="material-icons inline-icon">file_download
+                                    </i> Yes</a>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat">No</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="card-content">
                         <p class=""><i class="material-icons inline-icon icon-teal">business_center</i> Android App and Web Developer</p>
@@ -122,8 +137,6 @@
             <div class="col s12 m8 l9 container">
                 <div class="card z-depth-4">
                     <div class="card-content">
-                        <a class="btn-floating right btn-large waves-effect waves-light amber" href="/assets/Resume.pdf" id="menu" download="Abhiraman_Kuntimaddi_Resume.pdf"><i class="material-icons">file_download
-                            </i></a>
                         <h1><i class="material-icons inline-icon-card icon-teal">work</i> Work Experience</h1>
                         <h2 class="flow-text" style="color: gray">Internship</h2>
                         <h3 class="flow-text">UI Development / PetPals</h3>
@@ -316,10 +329,12 @@
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
             $('.tap-target').tapTarget();
+            $('.modal').modal();
         })
         $("#menu").ready(function() {
             $('.tap-target').tapTarget('open');
         })
+
     </script>
 </body>
 
