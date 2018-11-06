@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Abhiraman Kuntimaddi</title>
+    <title>Home - Abhiraman Kuntimaddi</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/fonts/alva-regular-webfont/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Meddon|Nothing+You+Could+Do|Pacifico|Permanent+Marker" rel="stylesheet">
 </head>
 
-<body class="grey lighten-5">
+<body class="blue-grey lighten-5">
+    <div class="thetop"></div>
     <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper teal">
-                <a href="#!" class="brand-logo logoanim" style="font-family: 'Lobster',cursive;"><i class="material-icons"></i>AK</a>
+                <a href="index.html" class="brand-logo logoanim custlogo"><i class="material-icons"></i>A</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="custlinks">Home</a></li>
@@ -36,27 +38,43 @@
         </nav>
     </nav>
     <main>
-        <br><br>
-        <h1 class="center name">Abhiraman Kuntimaddi</h1>
-        <div class="section no-pad-bot" id="index-banner">
-          
+        <br><br><br>
+        <div class="center">
+            <img class="responsive-img name" width="30%" src="images/Abhiraman_sign_svg.svg">
+        </div><br>
+        <div class="center">
+            <img class="responsive-img" width="30%" src="images/Abhiraman_Kuntimaddi_Logo_3.jpg">
+            <img class="materialboxed responsive-img" width="30%" data-caption="A picture of a way with a group of trees in a park" src="images/Abhiraman_Kuntimaddi_Logo_3.jpg">
         </div>
-        <div class="container">
-            <div class="section">
-                <!--   Icon Section   -->
-                <div class="col s12 m4 l8 center-align">
-                    <div class="icon-block"><br><br>
+        <br><br>
+        <div class="row">
+            <div class="col s12 m4 l2">
 
+            </div>
+            <div class="col s12 m4 l8">
+               
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/1.jpg">
+                        <span class="card-title">Card Title</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col s12 m4 l2">
 
+            </div>
+        </div>
         <br><br>
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large amber" href="#top">
-                <i class="large material-icons">arrow_upward</i>
-            </a>
+        <div class='scrolltop'>
+            <div class="fixed-action-btn scroll animated bounceInUp">
+                <a class="fab-button-cust waves-effect waves-light amber z-depth-3" href="#top" id="menu">Top
+                    <i class="material-icons inline-icon">arrow_upward</i>
+                </a>
+            </div>
         </div>
     </main>
 
@@ -100,10 +118,28 @@
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
+            $('.materialboxed').materialbox();
         })
 
     </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.scrolltop:hidden').stop(true, true).fadeIn();
+            } else {
+                $('.scrolltop').stop(true, true).fadeOut();
+            }
+        });
+        $(function() {
+            $(".scroll").click(function() {
+                $("html,body").animate({
+                    scrollTop: $(".thetop").offset().top
+                }, "1000");
+                return false
+            })
+        })
 
+    </script>
 </body>
 
 </html>

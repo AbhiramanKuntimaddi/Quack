@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Abhiraman Kuntimaddi</title>
+    <title>Social - Abhiraman Kuntimaddi</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/fonts/alva-regular-webfont/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Meddon|Nothing+You+Could+Do|Pacifico|Permanent+Marker" rel="stylesheet">
 </head>
 
 <body class="grey lighten-5">
+    <div class="thetop"></div>
     <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper teal">
-                <a href="#!" class="brand-logo logoanim" style="font-family: 'Lobster',cursive;"><i class="material-icons"></i>AK</a>
+                <a href="#!" class="brand-logo logoanim custlogo"><i class="material-icons"></i>A</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="custlinks">Home</a></li>
@@ -37,26 +39,86 @@
     </nav>
     <main>
         <br><br>
-        <h1 class="center name">Abhiraman Kuntimaddi</h1>
         <div class="section no-pad-bot" id="index-banner">
-            <p class="center textcust">Social Links? I dont use many, but page under construction.</p><br>
+            <p class="center textcust">Social Links? I dont use many, but here are some.</p><br>
         </div>
         <div class="container">
-            <div class="section">
-                <!--   Icon Section   -->
-                <div class="col s12 m4 l8 center-align">
-                    <div class="icon-block"><br><br>
-
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s2">
+                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s10">
+                        <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section">
+            <!--   Icon Section   -->
+            <div class="col s12 m4 l8 center-align">
+                <div class="icon-block"><br><br>
 
+                </div>
+            </div>
+        </div>
         <br><br>
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large amber" href="#top">
-                <i class="large material-icons">arrow_upward</i>
-            </a>
+        <div class='scrolltop'>
+            <div class="fixed-action-btn scroll animated bounceInUp">
+                <a class="fab-button-cust waves-effect waves-light amber z-depth-3" href="#top" id="menu">Top
+                    <i class="material-icons inline-icon">arrow_upward</i>
+                </a>
+            </div>
         </div>
     </main>
 
@@ -100,6 +162,24 @@
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
+        })
+
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.scrolltop:hidden').stop(true, true).fadeIn();
+            } else {
+                $('.scrolltop').stop(true, true).fadeOut();
+            }
+        });
+        $(function() {
+            $(".scroll").click(function() {
+                $("html,body").animate({
+                    scrollTop: $(".thetop").offset().top
+                }, "1000");
+                return false
+            })
         })
 
     </script>

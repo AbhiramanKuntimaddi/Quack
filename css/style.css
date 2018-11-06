@@ -2,10 +2,33 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #ffcd00;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+@font-face {
+    font-family: 'alvaregular';
+    src: url('assets/fonts/alva-regular-webfont/alva-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/alva-regular-webfont/alva-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.custlogo{
+    font-family: 'alvaregular';
+}
+.fab-button-cust {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50px;
 }
 
 .custfont {
@@ -44,8 +67,8 @@ main {
     font-family: 'Lobster', cursive;
 }
 
-.abouttext{
-    font-family: 'Nothing You Could Do',cursive;
+.abouttext {
+    font-family: 'Nothing You Could Do', cursive;
     font-size: 110%;
 }
 
@@ -55,8 +78,8 @@ main {
 }
 
 .name:hover {
-    -webkit-animation: tada 3s;
-    animation: tada 2s;
+    -webkit-animation: tada 2s;
+    animation: tada 1s;
     animation-iteration-count: 1;
 }
 
@@ -84,7 +107,6 @@ i.icon-teal {
     display: none;
     width: 100%;
     margin: 0 auto;
-    position: fixed;
     bottom: 20px;
     right: 10px;
 }
