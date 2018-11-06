@@ -9,16 +9,10 @@ main {
     flex: 1 0 auto;
 }
 
-@font-face {
-    font-family: 'alvaregular';
-    src: url('assets/fonts/alva-regular-webfont/alva-regular-webfont.woff2') format('woff2'),
-         url('assets/fonts/alva-regular-webfont/alva-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 .custlogo{
     font-family: 'alvaregular';
 }
+
 .fab-button-cust {
     border: none;
     color: white;
@@ -111,6 +105,14 @@ i.icon-teal {
     right: 10px;
 }
 
+.border-radius-card{
+    border-radius: 25px;
+    height: 20%;
+}
+
+.border-radius-cardv2{
+    border-radius: 15px;
+}
 /*
 font-family: 'Pacifico',cursive;
 font-family: 'Permanent Marker',cursive;
