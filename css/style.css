@@ -2,15 +2,19 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #ffcd00;
 }
 
 main {
     flex: 1 0 auto;
 }
 
-.custlogo{
-    font-family: 'alvaregular';
+.night-btn {
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 50px;
 }
 
 .fab-button-cust {
@@ -24,6 +28,7 @@ main {
     margin: 4px 2px;
     border-radius: 50px;
 }
+
 
 .custfont {
     font-family: 'Pacifico', cursive;
@@ -77,11 +82,11 @@ main {
     animation-iteration-count: 1;
 }
 
-.logoanim:hover {
-    -webkit-animation: wobble 3s;
-    animation: wobble 2s;
+/*.logoanim:hover {
+    -webkit-animation: headShake 3s;
+    animation: headShake 2s;
     animation-iteration-count: 1;
-}
+}*/
 
 .inline-icon {
     vertical-align: bottom;
@@ -105,14 +110,52 @@ i.icon-teal {
     right: 10px;
 }
 
-.border-radius-card{
+.border-radius-card {
     border-radius: 25px;
     height: 20%;
 }
 
-.border-radius-cardv2{
+.border-radius-cardv2 {
     border-radius: 15px;
 }
+
+.border-radius-left {
+    border-radius: 10px 70px 70px 70px;
+}
+
+.border-radius-right {
+    border-radius: 70px 10px 70px 70px;
+}
+
+.fb-blue {
+    background-color: #3B5999;
+}
+
+.pintrest-red {
+    background-color: #BD081C;
+}
+
+.insta-pink {
+    background-color: #E4405F;
+}
+
+.twitter-blue {
+    background-color: #55ACEE;
+}
+
+.snapchat-yellow {
+    background-color: #FFFC00;
+}
+
+.linkedin-blue {
+    background-color: #0077B5;
+}
+
+.github {
+    /*background-color: #333;*/
+    background-color: #23292e;
+}
+
 /*
 font-family: 'Pacifico',cursive;
 font-family: 'Permanent Marker',cursive;

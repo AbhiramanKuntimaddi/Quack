@@ -11,16 +11,15 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/fonts/alva-regular-webfont/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Meddon|Nothing+You+Could+Do|Pacifico|Permanent+Marker" rel="stylesheet">
 </head>
 
-<body class="grey lighten-5">
+<body class="">
     <div class="thetop"></div>
     <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper teal">
-                <a href="#!" class="brand-logo logoanim custlogo"><i class="material-icons"></i>A</a>
+                <a href="index.html" class="brand-logo"><img src="images/Abhiraman_Logo_Nav.png" height="40px" width="40px" hspace="20" vspace="10" /></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="custlinks">Home</a></li>
@@ -38,6 +37,11 @@
         </nav>
     </nav>
     <main>
+        <div class="nightbtn">
+            <div class="scroll night-btn waves-effect waves-light amber z-depth-2 hoverable animated fadeInRight" onclick="theme()">
+                <img class="circle inline-icon" width="35px" height="35px" src="images/Dark_and_Light.png" />
+            </div>
+        </div>
         <br><br><br>
         <div class="center">
             <img class="responsive-img name" width="30%" src="images/Abhiraman_sign_svg.svg">
@@ -129,6 +133,52 @@
         })
 
     </script>
+    <script>
+        document.body.style.backgroundColor = sessionStorage.getItem('bg');
+        document.getElementById("darkcard_1").style.backgroundColor = sessionStorage.getItem('dc1');
+        document.getElementById("darkcard_2").style.backgroundColor = sessionStorage.getItem('dc2');
+        document.getElementById("darkcard_3").style.backgroundColor = sessionStorage.getItem('dc3');
+        document.getElementById("darkcard_4").style.backgroundColor = sessionStorage.getItem('dc4');
+        document.getElementById("darkcard_5").style.backgroundColor = sessionStorage.getItem('dc5');
+
+        function theme() {
+            if (sessionStorage.getItem('bg') === 'rgb(255, 255, 255)') {
+                sessionStorage.setItem('bg', 'rgb(55, 71, 79)');
+                sessionStorage.setItem('dc1', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc2', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc3', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc4', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc5', 'rgb(38, 50, 56)');
+
+            } else if (sessionStorage.getItem('bg') == null || undefined) {
+                sessionStorage.setItem('bg', 'rgb(55, 71, 79)');
+                sessionStorage.setItem('dc1', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc2', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc3', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc4', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc5', 'rgb(38, 50, 56)');
+
+            } else if (sessionStorage.getItem('bg') === 'rgb(55, 71, 79)') {
+                sessionStorage.setItem('bg', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc1', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc2', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc3', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc4', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc5', 'rgb(255, 255, 255)');
+
+            }
+
+            document.body.style.backgroundColor = sessionStorage.getItem('bg');
+            document.getElementById("darkcard_1").style.backgroundColor = sessionStorage.getItem('dc1');
+            document.getElementById("darkcard_2").style.backgroundColor = sessionStorage.getItem('dc2');
+            document.getElementById("darkcard_3").style.backgroundColor = sessionStorage.getItem('dc3');
+            document.getElementById("darkcard_4").style.backgroundColor = sessionStorage.getItem('dc4');
+            document.getElementById("darkcard_5").style.backgroundColor = sessionStorage.getItem('dc5');
+
+        }
+
+    </script>
+
 </body>
 
 </html>

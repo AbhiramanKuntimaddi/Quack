@@ -11,16 +11,22 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/fonts/alva-regular-webfont/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Meddon|Nothing+You+Could+Do|Pacifico|Permanent+Marker" rel="stylesheet">
+    <style>
+        .modal {
+            width: 75% !important;
+            height: 85% !important;
+        }
+
+    </style>
 </head>
 
-<body class="grey lighten-5">
+<body class="">
     <div class="thetop"></div>
     <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper teal">
-                <a href="#!" class="brand-logo logoanim custlogo"><i class="material-icons"></i>A</a>
+                <a href="index.html" class="brand-logo"><img src="images/Abhiraman_Logo_Nav.png" height="40px" width="40px" hspace="20" vspace="10" /></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="custlinks">Home</a></li>
@@ -38,83 +44,115 @@
         </nav>
     </nav>
     <main>
-        <br><br><br>
-        <div class="center">
-            <img class="responsive-img name" width="30%" src="images/Abhiraman_sign_svg.svg">
-        </div><br>
-        <br><br>
+        <div class="nightbtn">
+            <div class="scroll night-btn waves-effect waves-light amber z-depth-2 hoverable animated fadeInRight" onclick="theme()">
+                <img class="circle inline-icon" width="35px" height="35px" src="images/Dark_and_Light.png" />
+            </div>
+        </div>
+        <div class="center"><br><br><br>
+            <img class="name" width="40%" src="images/Abhiraman_sign_svg.svg">
+        </div><br><br>
         <div class="section no-pad-bot" id="index-banner">
             <p class="center textcust">Social Links? I dont use many, but here are some.</p><br>
-        </div>
-        <div class="container">
-            <div class="card-panel grey lighten-5 z-depth-2 border-radius-card hoverable">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            Social Link _ 1
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-panel grey lighten-5 z-depth-2 border-radius-card hoverable">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            Social Link _ 2
-                        </span>
+        </div><br><br>
+        <div class="center">
+            <iframe src="https://discordapp.com/widget?id=382507592804466689&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </div><br><br>
+        <div class="container center">
+            <a href="https://www.instagram.com/abhiraman.kuntimaddi/" target="_blank">
+                <div class="card-panel insta-pink z-depth-2 border-radius-left hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" width="50%" class="circle responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="white-text">
+                                Instagram
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-panel grey lighten-5 z-depth-2 border-radius-card hoverable">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            Social Link _ 3
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="card-panel grey lighten-5 z-depth-2 border-radius-card hoverable">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            Social Link _ 4
-                        </span>
+            </a>
+            <a href="https://github.com/Madhav2106" target="_blank">
+                <div class="card-panel github z-depth-2 border-radius-right hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" width="50%" class="responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                Github
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card-panel grey lighten-5 z-depth-2 border-radius-card hoverable">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="images/Abhiraman_sign.png" alt="" class="circle responsive-img">
-                    </div>
-                    <div class="col s10">
-                        <span class="black-text">
-                            Social Link _ 5
-                        </span>
+            </a>
+            <a href="https://www.facebook.com/abhiraman.kuntimaddi" target="_blank">
+                <div class="card-panel fb-blue z-depth-2 border-radius-left hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="facebook" width="50%" class="responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                Facebook
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="section">
-            <!--   Icon Section   -->
-            <div class="col s12 m4 l8 center-align">
-                <div class="icon-block"><br><br>
-
+            </a>
+            <a class="modal-trigger" href="#modal1">
+                <div class="card-panel snapchat-yellow z-depth-2 border-radius-right hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/it/c/c4/Snapchat_logo.svg" alt="Snapchat" width="50%" class="responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                Snapchat
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <div class="col s12 m4 l2">
+                        <img width="50%" height="50%" src="images/Snapchat-670548802.jpg">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green amber btn">Happy Snapping!</a><br><br>
                 </div>
             </div>
+            <a href="https://twitter.com/abhiramank" target="_blank">
+                <div class="card-panel twitter-blue z-depth-2 border-radius-left hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Twitter_bird_logo_2012.svg" alt="Twitter" width="50%" class=" responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                Twitter
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://in.pinterest.com/kabhiraman/" target="_blank">
+                <div class="card-panel pintrest-red z-depth-2 border-radius-right hoverable">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pintrest" width="50%" class="responsive-img">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                Pintrest
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
         <br><br>
         <div class='scrolltop'>
@@ -125,7 +163,6 @@
             </div>
         </div>
     </main>
-
     <footer class="page-footer grey darken-1">
         <div class="container">
             <div class="row">
@@ -144,13 +181,12 @@
             </div>
         </div>
     </footer>
-
-
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cuddlecheek/night-mode-js@1.0.0/night-mode.min.js"></script>
     <script>
         $('.carousel').carousel({
             padding: 200
@@ -166,6 +202,7 @@
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
+            $('.modal').modal();
         })
 
     </script>
@@ -187,7 +224,51 @@
         })
 
     </script>
+    <script>
+        document.body.style.backgroundColor = sessionStorage.getItem('bg');
+        document.getElementById("darkcard_1").style.backgroundColor = sessionStorage.getItem('dc1');
+        document.getElementById("darkcard_2").style.backgroundColor = sessionStorage.getItem('dc2');
+        document.getElementById("darkcard_3").style.backgroundColor = sessionStorage.getItem('dc3');
+        document.getElementById("darkcard_4").style.backgroundColor = sessionStorage.getItem('dc4');
+        document.getElementById("darkcard_5").style.backgroundColor = sessionStorage.getItem('dc5');
 
+        function theme() {
+            if (sessionStorage.getItem('bg') === 'rgb(255, 255, 255)') {
+                sessionStorage.setItem('bg', 'rgb(55, 71, 79)');
+                sessionStorage.setItem('dc1', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc2', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc3', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc4', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc5', 'rgb(38, 50, 56)');
+
+            } else if (sessionStorage.getItem('bg') == null || undefined) {
+                sessionStorage.setItem('bg', 'rgb(55, 71, 79)');
+                sessionStorage.setItem('dc1', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc2', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc3', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc4', 'rgb(38, 50, 56)');
+                sessionStorage.setItem('dc5', 'rgb(38, 50, 56)');
+
+            } else if (sessionStorage.getItem('bg') === 'rgb(55, 71, 79)') {
+                sessionStorage.setItem('bg', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc1', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc2', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc3', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc4', 'rgb(255, 255, 255)');
+                sessionStorage.setItem('dc5', 'rgb(255, 255, 255)');
+
+            }
+
+            document.body.style.backgroundColor = sessionStorage.getItem('bg');
+            document.getElementById("darkcard_1").style.backgroundColor = sessionStorage.getItem('dc1');
+            document.getElementById("darkcard_2").style.backgroundColor = sessionStorage.getItem('dc2');
+            document.getElementById("darkcard_3").style.backgroundColor = sessionStorage.getItem('dc3');
+            document.getElementById("darkcard_4").style.backgroundColor = sessionStorage.getItem('dc4');
+            document.getElementById("darkcard_5").style.backgroundColor = sessionStorage.getItem('dc5');
+
+        }
+
+    </script>
 </body>
 
 </html>
