@@ -44,8 +44,8 @@
         </nav>
     </nav>
     <main>
-        <div class="nightbtn">
-            <div class="scroll night-btn waves-effect waves-light amber z-depth-2 hoverable animated fadeInRight" onclick="theme()">
+        <div class="nightbtn" id="drkbtn">
+            <div class="scroll night-btn waves-effect amber waves-light z-depth-2 hoverable animated fadeInRight tooltipped" data-position="bottom" data-tooltip="Turn on Dark / Light Mode" onclick="M.toast({html: ' ¯&#x2216;_(ツ)_ &#x2215;¯ ', classes: 'rounded'}); theme();" ondblclick="M.toast({html: 'Hey There! Slow Down.', classes: 'rounded'});">
                 <img class="circle inline-icon" width="35px" height="35px" src="images/Dark_and_Light.png" />
             </div>
         </div>
