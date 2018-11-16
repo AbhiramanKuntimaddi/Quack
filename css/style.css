@@ -12,9 +12,27 @@ main {
     position: fixed;
     top: 10%;
     right: 1%;
-    padding: 15px 30px;
+    padding: 15px 20px;
     display: inline-block;
     border-radius: 50px;
+}
+
+.illustration img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cust-img {
+    width: auto;
+    max-width: 60%;
+    height: auto;
+}
+
+.mat-teal {
+    background-color: #0a5659 !important;
 }
 
 .fab-button-cust {
@@ -29,14 +47,27 @@ main {
     border-radius: 50px;
 }
 
+li.active-cust {
+    background-color: rgb(255, 194, 1);
+    height: 6px;
+    border-radius: 50px;
+}
+
+li.mobile-active {
+    background-color: rgb(255, 194, 1);
+    width: auto;
+    border-radius: 50px;
+}
 
 .custfont {
     font-family: 'Pacifico', cursive;
+    font-size: 25px;
 }
 
 .custlinks {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: 14px;
+    color: black;
+    font-size: 17px;
 }
 
 

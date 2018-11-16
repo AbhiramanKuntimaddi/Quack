@@ -16,22 +16,22 @@
 
 <body class="">
     <div class="thetop"></div>
-    <nav class="teal" role="navigation" id="top">
+    <nav class="" role="navigation" id="top">
         <nav>
-            <div class="nav-wrapper teal">
+            <div class="nav-wrapper mat-teal">
                 <a href="index.html" class="brand-logo"><img src="images/Abhiraman_Logo_Nav.png" height="40px" width="40px" hspace="20" vspace="10" /></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="custlinks">Home</a></li>
-                    <li><a href="aboutme.html" class="custlinks">About Me</a></li>
-                    <li><a href="blog.html" class="custlinks">Blog</a></li>
+                    <li><a href="aboutme.html" class="custlinks">Resume</a></li>
+                    <li class="active-cust"><a href="blog.html" class="custlinks">Blog</a></li>
                     <li><a href="sociallinks.html" class="custlinks">Social Links</a></li>
                 </ul>
             </div>
             <ul class="sidenav" id="mobile-demo">
                 <li><a href="index.html" class="custlinks">Home</a></li>
-                <li><a href="aboutme.html" class="custlinks">About Me</a></li>
-                <li><a href="blog.html" class="custlinks">Blog</a></li>
+                <li><a href="aboutme.html" class="custlinks">Resume</a></li>
+                <li class="mobileactive"><a href="blog.html" class="custlinks">Blog</a></li>
                 <li><a href="sociallinks.html" class="custlinks">Social Links</a></li>
             </ul>
         </nav>
@@ -44,7 +44,7 @@
         </div>
         <br><br><br>
         <div class="center">
-            <img class="responsive-img name" width="30%" src="images/Abhiraman_sign_svg.svg">
+            <img class="responsive-img name" width="40%" src="images/Abhiraman_sign_svg.svg">
         </div><br>
         <br><br>
         <div class="section no-pad-bot" id="index-banner">
@@ -55,7 +55,7 @@
             <div class="section">
                 <!--   Icon Section   -->
                 <div class="col s12 m4 l8 center-align">
-                    <div class="icon-block"><br><br>
+                    <div class="icon-block">
 
                     </div>
                 </div>
@@ -76,14 +76,14 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                   <br>
-                    <img src="images/Abhiraman_Logo_Nav.png" height="100px" width="100px"/>
+                    <br>
+                    <img src="images/Abhiraman_Logo_Nav.png" height="100px" width="100px" />
                 </div>
                 <div class="col s12 m6 l3">
                     <h5 class="white-text" style="font-family: 'Nothing You Could Do',cursive;">Quick Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3 custlinksfoot" href="index.html">Home</a></li>
-                        <li><a class="grey-text text-lighten-3 custlinksfoot" href="aboutme.html">About Me</a></li>
+                        <li><a class="grey-text text-lighten-3 custlinksfoot" href="aboutme.html">Resume</a></li>
                         <li><a class="grey-text text-lighten-3 custlinksfoot" href="blog.html">Blog</a></li>
                         <li><a class="grey-text text-lighten-3 custlinksfoot" href="sociallinks.html">Social Links</a></li>
                     </ul>
@@ -113,6 +113,7 @@
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
+            $('.tooltipped').tooltip();
         })
 
     </script>
